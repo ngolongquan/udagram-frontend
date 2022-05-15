@@ -40,8 +40,7 @@ export class ApiService {
             .toPromise()
             .catch((e) => {
               ApiService.handleError(e);
-              console.log("aaaaa");
-              throw e;              
+              throw e;
             });
   }
 
@@ -52,8 +51,7 @@ export class ApiService {
             .catch((e) => {
               ApiService.handleError(e);
               throw e;
-                console.log("aaaaa");
-            }); 
+            });
   }
 
   async upload(endpoint: string, file: File, payload: any): Promise<any> {
